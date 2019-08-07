@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="25:00"
+        android:textSize="@dimen/timer_size"
+        android:layout_marginStart="@dimen/item_history_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvStatePomodoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="@dimen/item_history_margin"
+        android:layout_marginBottom="@dimen/item_history_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Finished"/>
+
+    <TextView
+        android:id="@+id/tvDateFinishedPomodoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:text="4m ago"
+        android:layout_marginEnd="@dimen/item_history_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvStatePomodoro"
+        app:layout_constraintBottom_toBottomOf="@id/tvStatePomodoro"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

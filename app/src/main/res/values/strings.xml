@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">pomodoro</string>
+    <string name="tab_text_1">New</string>
+    <string name="tab_text_2">History</string>
+    <string name="initial_time_state">25:00</string>
+    <string name="finished_state">Finished</string>
+    <string name="stopped_state">Stopped</string>
+    <string name="pomodoro_list_empty_state">There arent a pomodoros yet. :(</string>
+    <string name="pomodoro_finished">Your Pomodoro has finished! :)</string>
+    <string name="notification_channel_name">Pomodoro has finished</string>
+    <string name="notification_channel_description">Showed when your pomodoro has finished</string>
+    <string name="notification_channel_id">finished_pomodoro</string>
+</resources>
